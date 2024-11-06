@@ -9,11 +9,11 @@ function About() {
                 <img src={Icon} alt="icon" className='w-[88px] h-[88px]'/>
                 <div className='flex flex-col gap-0 justify-center items-center'>
                     <h1 className='text-4xl text-white font-bold'>Enershas </h1>
-                    <p className='text-[20px] text-zinc-50 font-bold pl-2'>Technologienpms</p>
+                    <p className='text-[20px] text-zinc-50 font-bold pl-2'>Technologies</p>
                 </div>
             </div>
                 <p className='text-[10px] text-gray-200 text-center'></p>
-                <p className='text-[12px] text-gray-200 text-center pt-2'><PhoneIcon  className='text-white text-center text-[10px]'/></p>
+                <p className='text-[12px] text-gray-200 text-center pt-2'><PhoneIcon  className='text-white text-center text-[10px]'/>updated soon... under working....</p>
         </div>
       </div>
     )
