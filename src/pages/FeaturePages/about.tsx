@@ -8,12 +8,12 @@ function About() {
             <div className="flex flex-row w-full p-4 gap-2 items-center justify-center">
                 <img src="" alt="saharaa" className='w-[88px] h-[88px]'/>
                 <div className='flex flex-col gap-0 justify-center items-center'>
-                    <h1 className='text-4xl text-white font-bold'>SAHARAA </h1>
-                    <p className='text-[20px] text-zinc-50 font-bold pl-2'>GOLD DIAMONDS</p>
+                    <h1 className='text-4xl text-white font-bold'>Enershas </h1>
+                    <p className='text-[20px] text-zinc-50 font-bold pl-2'>Technologies</p>
                 </div>
             </div>
-                <p className='text-[10px] text-gray-200 text-center'># 401, Akbar & Jalal Apt, Pillar No.45, Rethibowli, Mehdipatnam, Hyderabad, Telangana - 500 028</p>
-                <p className='text-[12px] text-gray-200 text-center pt-2'><PhoneIcon  className='text-white text-center text-[10px]'/> +91 9391752019</p>
+                <p className='text-[10px] text-gray-200 text-center'></p>
+                <p className='text-[12px] text-gray-200 text-center pt-2'><PhoneIcon  className='text-white text-center text-[10px]'/></p>
         </div>
       </div>
     )
