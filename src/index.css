@@ -5,3 +5,22 @@
 * {
   font-family: 'Inter', sans-serif;
 }
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.fadeInUp {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fadeInUp.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

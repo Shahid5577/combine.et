@@ -1,14 +1,10 @@
 import {
   Button,
   Divider,
-  IconButton,
   TextField,
   Typography,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-import {
-  QuestionMarkRounded
-} from "@mui/icons-material";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import banner from '../images/ban.png';
@@ -36,7 +32,10 @@ const Home: React.FC<HomeProps> = ({}) => {
       window.scrollTo({ top: 0, behavior: "auto" });
     }
   }, [location]);
-
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
 
   return (
@@ -136,17 +135,17 @@ const Home: React.FC<HomeProps> = ({}) => {
       <div className="flex flex-col items-center justify-between gap-4 p-4 py-4 sm:py-4 sm:flex-row sm:gap-8">
         <div className="flex items-center gap-2 sm:gap-4">
           
-          <Link to={"/about"}>
+          <Link to="/about">
             <Typography className="text-gray-600 dark:text-gray-300">
               About
             </Typography>
           </Link>
-          <Link to={""}>
+          <Link to="/services">
             <Typography className="text-gray-600 dark:text-gray-300">
               Services
             </Typography>
           </Link>
-          <Link to={""}>
+          <Link to="/careers">
             <Typography className="text-gray-600 dark:text-gray-300">
               Careers
             </Typography>
@@ -156,26 +155,16 @@ const Home: React.FC<HomeProps> = ({}) => {
               Privacy
             </Typography>
           </Link>
-          <Link to={""}>
-            <Typography className="text-gray-600 dark:text-gray-300">
-              Terms
-            </Typography>
-          </Link>
+            
         </div>
 
         <div className="flex items-center gap-2 sm:gap-4">
-          <IconButton>
-            <Link to="">
-              <QuestionMarkRounded className="text-gray-600 dark:text-gray-300" />
-            </Link>
-          </IconButton>
-
           <Typography className="text-gray-600 dark:text-gray-300">
             <Link to="">Help</Link>
           </Typography>
           <div className="border-gray-300 dark:border-gray-600 border-[1px] rounded-md px-6 py-[6px]">
             <Typography className="text-gray-600 dark:text-gray-300">
-              English
+              Support
             </Typography>
           </div>
         </div>

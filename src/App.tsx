@@ -5,6 +5,8 @@ import RootContainer from "./globals/root";
 import CookiesBar from "./components/CookiesBar";
 import Privacy from "./FooterPages/Privacy";
 import About from "./pages/FeaturePages/about";
+import ServicesPage from "./FooterPages/ServicesPage";
+import CareersPage from "./FooterPages/Careers";
 
 
 const Home = lazy(() => import("./pages/home"));
@@ -24,6 +26,8 @@ const App = () => {
             <Route path="" Component={Home} />
             <Route path="/privacy" element={<Privacy/>} />
             <Route path="/about" element={<About/>} />
+            <Route path="/services" element={<ServicesPage/>} />
+            <Route path="/careers" element={<CareersPage/>} />
           </Routes>
         </RootContainer>
       </BrowserRouter>

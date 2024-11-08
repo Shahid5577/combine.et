@@ -19,8 +19,8 @@ function Talent() {
           </div>
         </div>
         <div className="w-full sm:w-1/2 p-4">
-          <h1 className="text-[14px] sm:text-[24px] sm:pr-40">Get access to our pool of in-house talent from anywhere in the world.</h1>
-          <p className="dark:text-zinc-400 text-[10px] sm:text-[14px] pt-4 pb-3 sm:pb-5">No matter where you are in the world, you can benefit from full access to our in-house pool of highly experienced developers, engineers, marketers, and designers. Everything we do revolves around delivering reliable, secure, and scalable digital IT solutions that elevate your business above the competition and drive sustainable growth.</p>
+          <h1 className="text-[14px] sm:text-[24px] sm:pr-40 dark:text-gray-400">Get access to our pool of in-house talent from anywhere in the world.</h1>
+          <p className="dark:text-zinc-600 text-[10px] sm:text-[14px] pt-4 pb-3 sm:pb-5">No matter where you are in the world, you can benefit from full access to our in-house pool of highly experienced developers, engineers, marketers, and designers. Everything we do revolves around delivering reliable, secure, and scalable digital IT solutions that elevate your business above the competition and drive sustainable growth.</p>
           <button className="text-blue-500 border border-blue-500 rounded-lg hover:bg-blue-500 hover:text-white hover:border-transparent transition duration-300 px-2 sm:px-4 py-1 sm:py-2 text-[7px] sm:text-[14px]">
             Learn More
           </button>
