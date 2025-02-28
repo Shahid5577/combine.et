@@ -39,7 +39,7 @@ const Home: React.FC<HomeProps> = ({}) => {
 
 
   return (
-    <div  className="px-2 py-8 sm:px-6 sm:py-6">
+    <div  className="px-2 py-8 sm:px-6 sm:py-6 mt-4 sm:mt-14">
       <div id='home-section' className="p-4 flex flex-col sm:flex-row mt-0 sm:items-center justify-center sm:justify-start h-[calc(75vh-65px)] ml-2 gap-10">
         <div className="max-w-[600px] px-4 sm:px-8 pb-12 sm:mr-10 gap-6 text-center text-sm">
           <Typography
@@ -87,7 +87,7 @@ const Home: React.FC<HomeProps> = ({}) => {
             >
               <Link
                 to={
-                  ""
+                  "https://enershas.site"
                 }
               >
                 Get Started

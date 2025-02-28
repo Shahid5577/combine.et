@@ -27,7 +27,7 @@ function CareersPage() {
   const time = formatTime(remainingTime);
 
   return (
-    <div className="flex flex-col bg-slate-50 dark:bg-neutral-900 text-neutral-800 dark:text-zinc-100">
+    <div className="flex flex-col bg-slate-50 dark:bg-neutral-900 text-neutral-800 dark:text-zinc-100 mt-4 sm:mt-14">
       <main className="flex-grow flex flex-col items-center justify-center p-6 sm:p-0">
         <div className="text-center mb-8">
           <h1 className="text-3xl sm:text-5xl font-semibold">Coming Soon!</h1>

@@ -7,7 +7,7 @@ function Privacy() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="px-2 py-8 sm:px-8 sm:py-4">
+    <div className="px-2 py-8 sm:px-8 sm:py-4 mt-4 sm:mt-14">
       <div className="flex flex-col gap-6">
         {/* Main Heading */}
         <h1 className="text-stone-500 dark:text-zinc-300 text-center sm:text-3xl font-semibold">

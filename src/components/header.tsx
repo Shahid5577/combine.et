@@ -8,6 +8,8 @@ import { useMediaQuery } from '@mui/material';
 import Brand from './brand';
 import ThemeSwitch from './themeSwitch';
 import { Theme } from '@mui/material/styles';
+import ImportExportIcon from '@mui/icons-material/ImportExport';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const { theme } = useTheme();
@@ -37,14 +39,16 @@ const Header = () => {
           <Box sx={{ marginLeft: 'auto', marginRight: '16px' }}>
             <ThemeSwitch />
             {!isMobile && (
+              <Link to="/brochure">
               <button
                 className="bg-teal-500 dark:bg-teal-600 text-white py-2 px-6 rounded-full shadow-md hover:bg-teal-600 dark:hover:bg-teal-700 transition-all duration-300 text-sm sm:text-xs lg:text-sm transform hover:scale-105 animate-jump"
                 style={{
                   animation: "jump 0.6s ease-in-out infinite",
                 }}
               >
-                Sign up
+                Portal <ImportExportIcon />
               </button>
+              </Link>
             )}
           </Box>
         </Toolbar>

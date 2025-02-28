@@ -185,7 +185,7 @@ const RootContainer: React.FC<React.PropsWithChildren> = ({ children }) => {
       <div className="sticky top-0 z-10">
         <Header />
       </div>
-      <div className="mt-4 sm:mt-14">{children}</div>
+      <div >{children}</div>
     </ThemeProvider>
   );
 };

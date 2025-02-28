@@ -18,7 +18,7 @@ function About() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="px-6 py-1 sm:px-10 sm:py-1">
+    <div className="px-6 py-1 sm:px-10 sm:py-1 mt-4 sm:mt-14">
       {/* About Us Section */}
       <section className="text-center mb-20">
         <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-12 tracking-wide">ABOUT US</h2>

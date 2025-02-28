@@ -49,7 +49,7 @@ function ServicesPage() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div className='mt-4 sm:mt-14'>
       {/* Section Title */}
       <div className="text-center mb-16">
         <h1 className="text-lg sm:text-4xl font-semibold text-neutral-800 dark:text-zinc-100">OUR SERVICES</h1>
