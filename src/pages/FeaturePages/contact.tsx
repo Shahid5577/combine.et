@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function ContactBanner() {
   return (
     <div className="flex justify-center items-center sm:pb-10 sm:pt-10 py-10 p-4 sm:p-0">
@@ -13,9 +15,11 @@ function ContactBanner() {
           We’re available 24/7, so reach out whenever it’s convenient for you.
         </p>
         <div className="flex justify-center">
+          <Link to="/etcontact">
           <button className="bg-teal-500 dark:bg-teal-600 text-white py-2 px-6 rounded-full shadow-md hover:bg-teal-600 dark:hover:bg-teal-700 transition-all duration-300 text-sm sm:text-base lg:text-lg transform hover:scale-105">
             Get In Touch
           </button>
+          </Link>
         </div>
       </div>
     </div>

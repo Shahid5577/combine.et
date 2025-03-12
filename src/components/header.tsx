@@ -4,16 +4,14 @@ import Toolbar from '@mui/material/Toolbar';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import { useTheme } from '../atoms/theme';
-import { useMediaQuery } from '@mui/material';
 import Brand from './brand';
 import ThemeSwitch from './themeSwitch';
-import { Theme } from '@mui/material/styles';
 import ImportExportIcon from '@mui/icons-material/ImportExport';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
   const { theme } = useTheme();
-  const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
+ 
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -38,10 +36,10 @@ const Header = () => {
           <Brand />
           <Box sx={{ marginLeft: 'auto', marginRight: '16px' }}>
             <ThemeSwitch />
-            {!isMobile && (
+            
               <Link to="/brochure">
               <button
-                className="bg-teal-500 dark:bg-teal-600 text-white py-2 px-6 rounded-full shadow-md hover:bg-teal-600 dark:hover:bg-teal-700 transition-all duration-300 text-sm sm:text-xs lg:text-sm transform hover:scale-105 animate-jump"
+                className="bg-teal-500 dark:bg-teal-600 text-white py-1 px-2 rounded-full shadow-md hover:bg-teal-600 dark:hover:bg-teal-700 transition-all duration-300 text-sm text-[6px] sm:py-2 sm:px-6 sm:text-sm lg:text-sm transform hover:scale-105 animate-jump"
                 style={{
                   animation: "jump 0.6s ease-in-out infinite",
                 }}
@@ -49,7 +47,7 @@ const Header = () => {
                 Portal <ImportExportIcon />
               </button>
               </Link>
-            )}
+           
           </Box>
         </Toolbar>
       </AppBar>

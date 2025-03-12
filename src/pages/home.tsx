@@ -87,7 +87,7 @@ const Home: React.FC<HomeProps> = ({}) => {
             >
               <Link
                 to={
-                  "https://enershas.site"
+                  "/login"
                 }
               >
                 Get Started
@@ -100,7 +100,7 @@ const Home: React.FC<HomeProps> = ({}) => {
               Don't have an account?
             </p>
             <Link
-              to={""}
+              to={"/register"}
               className="flex-grow text-sm text-blue-500 sm:flex-grow-0"
             >
               Sign up at no cost

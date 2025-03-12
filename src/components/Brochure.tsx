@@ -6,7 +6,7 @@ import { ref, uploadBytes } from 'firebase/storage';
 import ETHeader from './ETHeader';
 import Footer from '../components/Footer';
 import { Divider } from '@mui/material';
-
+import { useEffect } from 'react';
 
 
 
@@ -86,6 +86,22 @@ const Brochure: React.FC = () => {
       }
     }
   };
+
+  useEffect(() => {
+    const hash = location.hash;
+    if (hash) {
+      const element = document.getElementById(hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "auto" });
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: "auto" });
+    }
+  }, [location]);
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     
