@@ -27,14 +27,14 @@ const Login: React.FC = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen">
-      <form onSubmit={handleSubmit} className="max-w-md mx-auto p-6 bg-white shadow-md rounded-lg">
+      <form onSubmit={handleSubmit} className="max-w-md mx-auto p-6 bg-white dark:bg-neutral-950 shadow-md rounded-lg">
         <h3 className="text-2xl font-semibold text-center mb-4">Login</h3>
 
         <div className="mb-4">
           <label className="block text-sm font-medium mb-1">Email address</label>
           <input
             type="email"
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border rounded-lg focus:outline-none bg-white dark:bg-rose-950 focus:ring-2 focus:ring-blue-500"
             placeholder="Enter email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -46,7 +46,7 @@ const Login: React.FC = () => {
           <label className="block text-sm font-medium mb-1">Password</label>
           <input
             type="password"
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-rose-950"
             placeholder="Enter password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
